@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <time.h>
+#include <stdlib.h>  // Incluir stdlib.h para usar exit
 #include "datos.h"
 #include "calculos.h"
 
