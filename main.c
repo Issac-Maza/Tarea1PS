@@ -40,7 +40,7 @@ int validarUsuario(const char *usuario, const char *clave) {
     char linea[MAX_LINE];
     int valido = 0;
     while (fgets(linea, MAX_LINE, archivo)) {
-        char *user = strtok(linea, ":");
+        char *user = strtok(linea, " ");
         char *pass = strtok(NULL, "\n");
         if (strcmp(usuario, user) == 0 && strcmp(clave, pass) == 0) {
             valido = 1;

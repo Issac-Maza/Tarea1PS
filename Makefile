@@ -1,8 +1,8 @@
-CC = gcc               
-CFLAGS = -Wall -g       
-SRC = main.c datos.c calculos.c 
-OBJ = main.o datos.o calculos.o  
-EXEC = programa         
+CC = gcc
+CFLAGS = -Wall -g
+SRC = main.c datos.c calculos.c
+OBJ = main.o datos.o calculos.o
+EXEC = programa
 
 
 all: $(EXEC)
