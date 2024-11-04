@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <time.h>
-#include <stdlib.h>  // Incluir stdlib.h para usar exit
+#include <stdlib.h>
 #include "datos.h"
 #include "calculos.h"
 
@@ -10,7 +10,7 @@
 #define USERS_FILE "usuarios.txt"
 #define LOG_FILE "bitacora.txt"
 
-// Función para obtener la fecha y hora actual en formato deseado
+
 void getFechaActual(char *buffer, int bufferSize) {
     time_t t = time(NULL);
     struct tm tm = *localtime(&t);
@@ -77,9 +77,57 @@ int main() {
         scanf("%d", &figura);
 
         switch (figura) {
-            case 1 ... 13:
+            case 1 :
                 solicitarDatosFigura(figura);
-                escribirBitacora(usuario, "Figura seleccionada");
+                escribirBitacora(usuario, "Triangulo");
+                break;
+	    case 2:
+		solicitarDatosFigura(figura);
+		escribirBitacora(usuario, "Paralelogramo");
+		break;
+	    case 3:
+		solicitarDatosFigura(figura);
+                escribirBitacora(usuario, "Cuadrado");
+		break;
+	    case 4:
+                solicitarDatosFigura(figura);
+                escribirBitacora(usuario, "Rectangulo");
+		break;
+	    case 5:
+                solicitarDatosFigura(figura);
+                escribirBitacora(usuario, "Rombo");
+                break;
+	    case 6:
+                solicitarDatosFigura(figura);
+                escribirBitacora(usuario, "Trapecio");
+                break;
+	    case 7:
+                solicitarDatosFigura(figura);
+                escribirBitacora(usuario, "Circulo");
+                break;
+	    case 8:
+                solicitarDatosFigura(figura);
+                escribirBitacora(usuario, "Poligono Regular");
+                break;
+	    case 9:
+                solicitarDatosFigura(figura);
+                escribirBitacora(usuario, "Cubo");
+                break;
+	    case 10:
+                solicitarDatosFigura(figura);
+                escribirBitacora(usuario, "Cuboide");
+                break;
+	    case 11:
+                solicitarDatosFigura(figura);
+                escribirBitacora(usuario, "Cilindro");
+                break;
+	    case 12:
+                solicitarDatosFigura(figura);
+                escribirBitacora(usuario, "Esfera");
+                break;
+	    case 13:
+                solicitarDatosFigura(figura);
+                escribirBitacora(usuario, "Cono");
                 break;
             case 0:
                 printf("Saliendo del sistema.\n");
@@ -112,4 +160,3 @@ int main() {
 
     return 0;
 }
-
